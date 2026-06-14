@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "nome": "Shampoo Pantene",
+    "categoria": "Cabelo",
+    "descricao": "Shampoo para fortalecimento capilar.",
+    "preco": 24.90,
+    "imagem": "https://images.unsplash.com/photo-1620916566398-39f1143ab7be"
+  },
+  {
+    "id": 2,
+    "nome": "Creme Hidratante Nivea",
+    "categoria": "Skincare",
+    "descricao": "Hidratação profunda para pele seca.",
+    "preco": 19.90,
+    "imagem": "https://images.unsplash.com/photo-1556228578-8c89e6adf883"
+  },
+  {
+    "id": 3,
+    "nome": "Vitamina C",
+    "categoria": "Vitaminas",
+    "descricao": "Suplemento para imunidade.",
+    "preco": 34.90,
+    "imagem": "https://images.unsplash.com/photo-1584017911766-d451b3d0e843"
+  },
+  {
+    "id": 4,
+    "nome": "Paracetamol",
+    "categoria": "Remédios",
+    "descricao": "Medicamento para dores e febre.",
+    "preco": 12.50,
+    "imagem": "https://images.unsplash.com/photo-1587854692152-cbe660dbde88"
+  },
+  {
+    "id": 5,
+    "nome": "Sabonete Facial",
+    "categoria": "Skincare",
+    "descricao": "Limpeza suave para o rosto.",
+    "preco": 22.90,
+    "imagem": "https://images.unsplash.com/photo-1571781926291-c477ebfd024b"
+  }
+]
