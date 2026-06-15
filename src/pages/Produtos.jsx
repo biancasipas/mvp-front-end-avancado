@@ -1,8 +1,10 @@
+import Header from "../components/Header";
 import produtos from "../data/produtos.json";
 
 function Produtos() {
   return (
     <div>
+      <Header/>
       <h1>Nossos Produtos 💊</h1>
 
       {produtos.map((produto) => (

@@ -1,3 +1,4 @@
+import Header from "../components/Header";
 import produtos from "../data/produtos.json";
 
 function DetalhesProduto() {
@@ -5,6 +6,7 @@ function DetalhesProduto() {
 
   return (
     <div>
+        <Header/>
       <h1>Detalhes do Produto</h1>
 
       <h2>{produto.nome}</h2>
