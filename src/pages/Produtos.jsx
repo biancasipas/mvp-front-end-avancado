@@ -1,19 +1,21 @@
 import Header from "../components/Header";
+import CardProduto from "../components/CardProduto";
 import produtos from "../data/produtos.json";
 
 function Produtos() {
   return (
     <div>
-      <Header/>
+      <Header />
+
       <h1>Nossos Produtos 💊</h1>
 
       {produtos.map((produto) => (
-        <div key={produto.id}>
-          <h2>{produto.nome}</h2>
-          <p>Categoria: {produto.categoria}</p>
-          <p>Preço: R$ {produto.preco}</p>
-          <hr />
-        </div>
+        <CardProduto
+          key={produto.id}
+          nome={produto.nome}
+          categoria={produto.categoria}
+          preco={produto.preco}
+        />
       ))}
     </div>
   );

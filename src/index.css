@@ -116,3 +116,14 @@ p {
     font-size: 36px;
   }
 }
+
+/* CARD PRODUTO */
+
+.card-produto {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  margin: 20px auto;
+  width: 300px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
