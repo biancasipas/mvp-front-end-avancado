@@ -4,9 +4,9 @@ import logoFarmacia from "../assets/araujo.png";
 const menuItems = [
   { label: "Home", to: "/" },
   { label: "Produtos", to: "/produtos" },
-  { label: "Remédios", to: "/produtos" },
-  { label: "Skincare", to: "/produtos" },
-  { label: "Cabelo", to: "/produtos" },
+  { label: "Remédios", to: "/remedios" },
+  { label: "Cabelo", to: "/cabelo" },
+  { label: "Promoções", to: "/promocoes" },
 ];
 
 function Header() {
@@ -29,6 +29,7 @@ function Header() {
           </NavLink>
         ))}
       </nav>
+
     </header>
   );
 }
