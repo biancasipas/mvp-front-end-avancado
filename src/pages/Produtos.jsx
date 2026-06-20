@@ -8,7 +8,11 @@ function Produtos() {
       <Header />
 
       <div className="produtos-page">
-        <h1>Nossos Produtos 💊</h1>
+        <div className="produtos-descricao">
+          <p>
+            Tudo o que você precisa para cuidar da sua saúde e do seu bem-estar em um só lugar.
+          </p>
+        </div>
 
         <div className="produtos-container">
           {produtos.map((produto) => (
