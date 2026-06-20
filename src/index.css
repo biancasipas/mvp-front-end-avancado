@@ -39,11 +39,15 @@ p {
 
 /* HEADER */
 .header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
   width: 100%;
   padding: 18px 28px;
   margin-bottom: 30px;
-  background: #fff;
-  border-radius: 18px;
+  background: #ffffff;
+  border-radius: 0 0 18px 18px;
   box-shadow: var(--shadow);
   display: flex;
   align-items: center;
@@ -117,16 +121,7 @@ p {
   }
 }
 
-/* CARD PRODUTO */
 
-.card-produto {
-  background: white;
-  border-radius: 16px;
-  padding: 20px;
-  margin: 20px auto;
-  width: 300px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
 
 
 
