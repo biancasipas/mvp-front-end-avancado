@@ -1,6 +1,19 @@
+import { useState } from "react";
 import "./ProductCard.css";
 
 function ProductCard({ nome, categoria, preco, imagem }) {
+  const [quantidade, setQuantidade] = useState(1);
+
+  const diminuir = () => {
+    if (quantidade > 1) {
+      setQuantidade(quantidade - 1);
+    }
+  };
+
+  const aumentar = () => {
+    setQuantidade(quantidade + 1);
+  };
+
   return (
     <div className="card">
       <div className="image-container">
@@ -16,12 +29,17 @@ function ProductCard({ nome, categoria, preco, imagem }) {
       <div className="content">
         <div className="product-name">{nome}</div>
         <p className="category">{categoria}</p>
+
+        <div className="quantity">
+          <span>Quantidade:</span>
+          <button className="minus" onClick={diminuir}>-</button>
+          <span className="quantity-number">{quantidade}</span>
+          <button className="plus" onClick={aumentar}>+</button>
+        </div>
       </div>
 
       <div className="button-container">
-        <button className="buy-button button">
-          Ver detalhes
-        </button>
+        <button className="buy-button button">Ver detalhes</button>
 
         <button className="cart-button button">
           <svg
