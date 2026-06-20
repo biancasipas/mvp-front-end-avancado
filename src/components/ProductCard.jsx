@@ -1,7 +1,8 @@
 import { useState } from "react";
 import "./ProductCard.css";
+import { Link } from "react-router-dom";
 
-function ProductCard({ nome, categoria, preco, imagem }) {
+function ProductCard({ id, nome, categoria, preco, imagem }) {
   const [quantidade, setQuantidade] = useState(1);
 
   const diminuir = () => {
@@ -39,8 +40,9 @@ function ProductCard({ nome, categoria, preco, imagem }) {
       </div>
 
       <div className="button-container">
-        <button className="buy-button button">Ver detalhes</button>
-
+        <Link to={`/produto/${id}`} className="buy-button button">
+          Ver detalhes
+        </Link>
         <button className="cart-button button">
           <svg
             xmlns="http://www.w3.org/2000/svg"
