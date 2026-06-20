@@ -1,7 +1,7 @@
 :root {
   --text: #6b6375;
   --title: #f3f4f6;
-  --bg: #16171d;
+  --bg: #050f46;
   --border: #2e303a;
   --blue: #005baa;
   --shadow: rgba(0, 0, 0, 0.25) 0 8px 20px;
@@ -127,3 +127,6 @@ p {
   width: 300px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
+
+
+

@@ -5,7 +5,7 @@
     "categoria": "Cabelo",
     "descricao": "Shampoo para fortalecimento capilar.",
     "preco": 24.90,
-    "imagem": "https://images.unsplash.com/photo-1620916566398-39f1143ab7be"
+    "imagem": "https://m.media-amazon.com/images/I/615HVwRinGL._AC_SY355_.jpg"
   },
   {
     "id": 2,
@@ -13,30 +13,30 @@
     "categoria": "Skincare",
     "descricao": "Hidratação profunda para pele seca.",
     "preco": 19.90,
-    "imagem": "https://images.unsplash.com/photo-1556228578-8c89e6adf883"
+    "imagem": "https://www.drogasil.com.br/_next/image?url=https%3A%2F%2Fproduct-data.raiadrogasil.io%2Fimages%2F18904514.webp&w=828&q=75"
   },
   {
     "id": 3,
-    "nome": "Vitamina C",
-    "categoria": "Vitaminas",
-    "descricao": "Suplemento para imunidade.",
+    "nome": "Sérum Principia VC-10 Vitamina C e Ácido Ferúlico 30ml",
+    "categoria": "Skincare",
+    "descricao": "Sérum Vitamina C 10% + Ácido Ferúlico.",
     "preco": 34.90,
-    "imagem": "https://images.unsplash.com/photo-1584017911766-d451b3d0e843"
+    "imagem": "/imagens/VitaminaC.webp"
   },
   {
     "id": 4,
-    "nome": "Paracetamol",
+    "nome": "Paracetamol 750mg",
     "categoria": "Remédios",
-    "descricao": "Medicamento para dores e febre.",
+    "descricao": "Paracetamol 750mg com 20 comprimidos.",
     "preco": 12.50,
-    "imagem": "https://images.unsplash.com/photo-1587854692152-cbe660dbde88"
+    "imagem": "https://i3-imagens-prd.araujo.com.br/redimensionada/380x380/96384/7899547531237_1.webp"
   },
   {
     "id": 5,
-    "nome": "Sabonete Facial",
+    "nome": "Gel de Limpeza Principia GL 02 350g",
     "categoria": "Skincare",
-    "descricao": "Limpeza suave para o rosto.",
-    "preco": 22.90,
-    "imagem": "https://images.unsplash.com/photo-1571781926291-c477ebfd024b"
+    "descricao": "Gel de limpeza suave.",
+    "preco": 39.99,
+    "imagem": "/imagens/SaboneteF.webp"
   }
 ]

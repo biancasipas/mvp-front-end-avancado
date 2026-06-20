@@ -1,0 +1,130 @@
+.card {
+  --accent-color: #083270;
+  position: relative;
+  width: 240px;
+  background: rgb(226, 226, 236);
+  border-radius: 1rem;
+  padding: 0.4rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 20px 30px -10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 150px;
+  border-radius: 0.7rem;
+  border-top-right-radius: 4rem;
+  margin-bottom: 1rem;
+  background: #ffffff;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: inherit;
+}
+
+.price {
+  position: absolute;
+  right: 0.7rem;
+  bottom: -1rem;
+  background: white;
+  color: var(--accent-color);
+  font-weight: 900;
+  font-size: 0.9rem;
+  padding: 0.5rem;
+  border-radius: 1rem 1rem 2rem 2rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 0px 15px;
+}
+
+.favorite {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  cursor: pointer;
+}
+
+.favorite input {
+  display: none;
+}
+
+.favorite span {
+  color: #ff5f5f;
+  font-size: 22px;
+}
+
+.content {
+  padding: 0 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.category {
+  color: #999;
+  font-size: 0.8rem;
+}
+
+.button-container {
+  display: flex;
+  gap: 0.3rem;
+}
+
+.button {
+  border-radius: 1.4rem 1.4rem 0.7rem 0.7rem;
+  border: none;
+  padding: 0.6rem;
+  background: var(--accent-color);
+  color: white;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: orange;
+}
+
+.buy-button {
+  flex: 1;
+}
+
+.cart-button {
+  width: 50px;
+}
+
+.produtos-page {
+  padding: 30px 40px;
+  text-align: center;
+}
+
+.produtos-page h1 {
+  color: white;
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.produtos-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 240px));
+  gap: 28px;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.product-name {
+  font-weight: 700;
+  color: #666;
+  font-size: 0.9rem;
+
+  height: 70px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
