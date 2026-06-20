@@ -189,5 +189,50 @@ p {
   font-weight: 800;
 }
 
+.detalhes-acoes {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.detalhes-quantidade {
+  display: flex;
+  align-items: center;
+}
+
+.detalhes-quantidade button {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ccc;
+  background: white;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.detalhes-quantidade span {
+  width: 50px;
+  text-align: center;
+  font-weight: bold;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  height: 40px;
+  line-height: 40px;
+}
+
+.comprar-btn {
+  background: #e85d2a;
+  color: white;
+  border: none;
+  padding: 12px 40px;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.comprar-btn:hover {
+  opacity: 0.9;
+}
+
 
 
