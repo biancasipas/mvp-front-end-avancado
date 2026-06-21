@@ -289,3 +289,20 @@ p {
 .voltar-btn {
   width: 150px;
 }
+
+/* BARRA DE BUSCA */
+
+.barra-busca {
+  width: 350px;
+  max-width: 90%;
+  padding: 12px 16px;
+  margin: 20px 0 30px;
+  border: 2px solid #005baa;
+  border-radius: 25px;
+  font-size: 16px;
+  outline: none;
+}
+
+.barra-busca:focus {
+  border-color: #083270;
+}
