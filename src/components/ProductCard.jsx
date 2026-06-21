@@ -29,7 +29,6 @@ function ProductCard({ id, nome, categoria, preco, imagem }) {
 
       <div className="content">
         <div className="product-name">{nome}</div>
-        <p className="category">{categoria}</p>
 
         <div className="quantity">
           <span>Quantidade:</span>

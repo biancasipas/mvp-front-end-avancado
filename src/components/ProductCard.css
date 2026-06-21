@@ -82,6 +82,7 @@
   color: white;
   font-weight: 900;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .button:hover {
