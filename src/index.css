@@ -179,47 +179,69 @@ p {
   margin-bottom: 24px;
 }
 
-.voltar-btn {
-  display: inline-block;
-  background: #083270;
-  color: white;
-  padding: 12px 28px;
-  border-radius: 18px;
-  text-decoration: none;
-  font-weight: 800;
-}
+/* BOTÕES E QUANTIDADE */
 
 .detalhes-quantidade {
   display: flex;
   align-items: center;
+  width: 130px;
+  height: 30px;
+  margin-bottom: 18px;
+  border: 1px solid #7b7cbb;
+  border-radius: 15px;
+  overflow: hidden;
+  background: white;
+}
+
+.detalhes-quantidade button,
+.detalhes-quantidade span {
+  width: 45px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .detalhes-quantidade button {
-  width: 40px;
-  height: 40px;
-  border: 1px solid #ccc;
+  border: none;
   background: white;
+  font-size: 18px;
+  font-weight: bold;
+  color: #083270;
   cursor: pointer;
-  font-size: 20px;
 }
 
 .detalhes-quantidade span {
-  width: 50px;
-  text-align: center;
   font-weight: bold;
-  border-top: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
-  height: 40px;
-  line-height: 40px;
+  color: #083270;
+  border-left: 1px solid #d8d8d8;
+  border-right: 1px solid #d8d8d8;
+}
+
+.detalhes-botoes {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 6px;
+}
+
+.comprar-btn,
+.voltar-btn {
+  height: 46px;
+  padding: 0;
+  border-radius: 24px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .comprar-btn {
+  width: 150px;
   background: #e85d2a;
   color: white;
   border: none;
-  padding: 12px 40px;
-  border-radius: 30px;
-  font-weight: bold;
+  gap: 6px;
   cursor: pointer;
 }
 
@@ -227,5 +249,9 @@ p {
   opacity: 0.9;
 }
 
-
-
+.voltar-btn {
+  width: 110px;
+  background: #083270;
+  color: white;
+  text-decoration: none;
+}
