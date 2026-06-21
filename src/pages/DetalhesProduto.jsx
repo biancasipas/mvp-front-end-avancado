@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import Header from "../components/Header";
 import produtos from "../data/produtos.json";
+import Botao from "../components/Botao";
 
 function DetalhesProduto() {
   const { id } = useParams();

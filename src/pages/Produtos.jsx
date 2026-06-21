@@ -5,6 +5,9 @@ import BarraBusca from "../components/BarraBusca";
 import produtos from "../data/produtos.json";
 
 function Produtos() {
+
+
+   
   const [busca, setBusca] = useState("");
 
   const produtosFiltrados = produtos.filter((produto) =>
