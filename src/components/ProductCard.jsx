@@ -15,11 +15,13 @@ function ProductCard({ id, nome, categoria, preco, imagem }) {
     setQuantidade(quantidade + 1);
   };
 
+  const total = preco * quantidade;
+
   return (
     <div className="card">
       <div className="image-container">
         <img src={imagem} alt={nome} />
-        <div className="price">R$ {preco}</div>
+        <div className="price">R$ {total.toFixed(2)}</div>
       </div>
 
       <label className="favorite">
