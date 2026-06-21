@@ -101,12 +101,6 @@
   text-align: center;
 }
 
-.produtos-page h1 {
-  color: white;
-  font-size: 36px;
-  margin-bottom: 30px;
-}
-
 .produtos-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 240px));
