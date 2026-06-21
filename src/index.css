@@ -189,13 +189,6 @@ p {
   font-weight: 800;
 }
 
-.detalhes-acoes {
-  display: flex;
-  gap: 15px;
-  align-items: center;
-  margin-top: 20px;
-}
-
 .detalhes-quantidade {
   display: flex;
   align-items: center;
