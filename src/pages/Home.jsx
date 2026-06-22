@@ -1,6 +1,7 @@
 import Header from "../components/Header";
 import { Link } from "react-router-dom";
 import farmacia from "../assets/farmacia.jpg";
+import "./Home.css";
 
 function Home() {
   return (

@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import logoFarmacia from "../assets/araujo.png";
+import "./Header.css";
 
 const menuItems = [
   { label: "Home", to: "/" },

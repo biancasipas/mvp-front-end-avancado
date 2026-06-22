@@ -1,3 +1,5 @@
+import "./BarraBusca.css";
+
 function BarraBusca({ busca, setBusca }) {
   return (
     <input
