@@ -24,11 +24,6 @@ function ProductCard({ id, nome, categoria, preco, imagem }) {
         <div className="price">R$ {total.toFixed(2)}</div>
       </div>
 
-      <label className="favorite">
-        <input type="checkbox" />
-        <span>♥</span>
-      </label>
-
       <div className="content">
         <div className="product-name">{nome}</div>
 

@@ -43,22 +43,6 @@
   box-shadow: rgba(100, 100, 111, 0.2) 0px 0px 15px;
 }
 
-.favorite {
-  position: absolute;
-  top: 10px;
-  right: 12px;
-  cursor: pointer;
-}
-
-.favorite input {
-  display: none;
-}
-
-.favorite span {
-  color: #ff5f5f;
-  font-size: 22px;
-}
-
 .content {
   padding: 0 0.8rem;
   margin-bottom: 1rem;
