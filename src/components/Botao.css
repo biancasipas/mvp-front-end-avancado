@@ -1,0 +1,31 @@
+.botao {
+  width: 150px;
+  height: 46px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+
+  border: none;
+  border-radius: 24px;
+
+  font-weight: bold;
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.botao:hover {
+  transform: translateY(-3px);
+}
+
+.botao-laranja {
+  background: #e85d2a;
+  color: white;
+}
+
+.botao-azul {
+  background: #083270;
+  color: white;
+}

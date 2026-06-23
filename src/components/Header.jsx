@@ -5,9 +5,6 @@ import "./Header.css";
 const menuItems = [
   { label: "Home", to: "/" },
   { label: "Produtos", to: "/produtos" },
-  { label: "Remédios", to: "/remedios" },
-  { label: "Cabelo", to: "/cabelo" },
-  { label: "Promoções", to: "/promocoes" },
 ];
 
 function Header() {
