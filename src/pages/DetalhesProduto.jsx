@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useParams, Link } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import Header from "../components/Header";
 import Botao from "../components/Botao";
 import produtos from "../data/produtos.json";
@@ -7,9 +7,13 @@ import "./DetalhesProduto.css";
 
 function DetalhesProduto() {
   const { id } = useParams();
+  const navigate = useNavigate();
+
   const [quantidade, setQuantidade] = useState(1);
 
-  const produto = produtos.find((item) => item.id === Number(id));
+  const produto = produtos.find(
+    (item) => item.id === Number(id)
+  );
 
   const diminuir = () => {
     if (quantidade > 1) {
@@ -24,18 +28,25 @@ function DetalhesProduto() {
   const total = produto ? produto.preco * quantidade : 0;
 
   const comprar = () => {
-    alert(`${quantidade} unidade(s) adicionada(s) ao carrinho! Total: R$ ${total.toFixed(2)}`);
+    alert(
+      `${quantidade} unidade(s) adicionada(s) ao carrinho! Total: R$ ${total.toFixed(2)}`
+    );
   };
 
   if (!produto) {
     return (
       <>
         <Header />
+
         <div className="detalhes-page">
           <h1>Produto não encontrado</h1>
-          <Link to="/produtos" className="voltar-btn">
+
+          <button
+            className="voltar-btn"
+            onClick={() => navigate("/produtos")}
+          >
             Voltar para produtos
-          </Link>
+          </button>
         </div>
       </>
     );
@@ -47,20 +58,43 @@ function DetalhesProduto() {
 
       <div className="detalhes-page">
         <div className="detalhes-card">
-          <img src={produto.imagem} alt={produto.nome} />
+          <img
+            src={produto.imagem}
+            alt={produto.nome}
+          />
 
           <div className="detalhes-info">
             <h1>{produto.nome}</h1>
-            <p className="detalhes-categoria">{produto.categoria}</p>
+
+            <p className="detalhes-categoria">
+              {produto.categoria}
+            </p>
+
             <p>{produto.descricao}</p>
 
             <div className="detalhes-compra">
-              <strong>R$ {total.toFixed(2)}</strong>
+              <strong>
+                R$ {total.toFixed(2)}
+              </strong>
 
               <div className="detalhes-quantidade">
-                <button className="minus" onClick={diminuir}>-</button>
-                <span className="quantity-number">{quantidade}</span>
-                <button className="plus" onClick={aumentar}>+</button>
+                <button
+                  className="minus"
+                  onClick={diminuir}
+                >
+                  -
+                </button>
+
+                <span className="quantity-number">
+                  {quantidade}
+                </span>
+
+                <button
+                  className="plus"
+                  onClick={aumentar}
+                >
+                  +
+                </button>
               </div>
             </div>
 
@@ -71,6 +105,7 @@ function DetalhesProduto() {
                 title="Adicionar produto ao carrinho"
               >
                 Comprar
+
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="18"
@@ -83,9 +118,13 @@ function DetalhesProduto() {
                 </svg>
               </Botao>
 
-              <Link to="/produtos" className="voltar-btn">
+              <Botao
+                className="voltar-btn"
+                onClick={() => navigate("/produtos")}
+                title="Voltar para a página de produtos"
+              >
                 Voltar
-              </Link>
+              </Botao>
             </div>
           </div>
         </div>
@@ -95,3 +134,4 @@ function DetalhesProduto() {
 }
 
 export default DetalhesProduto;
+
