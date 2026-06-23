@@ -1,15 +1,23 @@
 import "./Botao.css";
+import TooltipCustom from "./TooltipCustom";
 
-function Botao({ children, onClick, type = "button", className = "", title }) {
+function Botao({
+  children,
+  onClick,
+  type = "button",
+  className = "",
+  title = "",
+}) {
   return (
-    <button
-      type={type}
-      onClick={onClick}
-      className={`botao ${className}`}
-      title={title}
-    >
-      {children}
-    </button>
+    <TooltipCustom title={title} placement="top-end">
+      <button
+        type={type}
+        onClick={onClick}
+        className={`botao ${className}`}
+      >
+        {children}
+      </button>
+    </TooltipCustom>
   );
 }
 
