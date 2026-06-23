@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import logoFarmacia from "../assets/araujo.png";
 import "./Header.css";
 
@@ -8,10 +8,12 @@ const menuItems = [
 ];
 
 function Header() {
+  const location = useLocation();
+
   return (
     <header className="header">
       <div className="header-logo">
-        <img src={logoFarmacia} alt="Araújo" className="logo" />
+        <img src={logoFarmacia} alt="Vida Farma" className="logo" />
       </div>
 
       <nav className="header-nav">
@@ -28,6 +30,9 @@ function Header() {
         ))}
       </nav>
 
+      <span className="rota-atual">
+        {location.pathname === "/" ? "Home" : "Produtos"}
+      </span>
     </header>
   );
 }

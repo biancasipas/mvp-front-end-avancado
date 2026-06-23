@@ -86,3 +86,10 @@
     font-size: 13px;
   }
 }
+
+.rota-atual {
+  font-size: 13px;
+  font-weight: bold;
+  color: #03055a;
+  white-space: nowrap;
+}
