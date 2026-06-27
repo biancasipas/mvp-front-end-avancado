@@ -1,6 +1,7 @@
 import { useState } from "react";
-import "./ProductCard.css";
 import { Link } from "react-router-dom";
+import Botao from "./Botao";
+import "./ProductCard.css";
 
 function ProductCard({ id, nome, categoria, preco, imagem }) {
   const [quantidade, setQuantidade] = useState(1);
@@ -17,6 +18,12 @@ function ProductCard({ id, nome, categoria, preco, imagem }) {
 
   const total = preco * quantidade;
 
+  const adicionarCarrinho = () => {
+    alert(
+      `${quantidade} unidade(s) adicionada(s) ao carrinho!\nTotal: R$ ${total.toFixed(2)}`
+    );
+  };
+
   return (
     <div className="card">
       <div className="image-container">
@@ -29,9 +36,16 @@ function ProductCard({ id, nome, categoria, preco, imagem }) {
 
         <div className="quantity">
           <span>Quantidade:</span>
-          <button className="minus" onClick={diminuir}>-</button>
+
+          <Botao className="minus" onClick={diminuir}>
+            -
+          </Botao>
+
           <span className="quantity-number">{quantidade}</span>
-          <button className="plus" onClick={aumentar}>+</button>
+
+          <Botao className="plus" onClick={aumentar}>
+            +
+          </Botao>
         </div>
       </div>
 
@@ -39,7 +53,12 @@ function ProductCard({ id, nome, categoria, preco, imagem }) {
         <Link to={`/produto/${id}`} className="buy-button button">
           Ver detalhes
         </Link>
-        <button className="cart-button button">
+
+        <Botao
+          className="cart-button button"
+          title="Adicionar ao carrinho"
+          onClick={adicionarCarrinho}
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="18"
@@ -50,7 +69,7 @@ function ProductCard({ id, nome, categoria, preco, imagem }) {
             <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .49.402L2.89 3H14.5a.5.5 0 0 1 .49.598l-1.5 7A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.49-.402L1.61 2H.5A.5.5 0 0 1 0 1.5z" />
             <path d="M5.5 13a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm5 0a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z" />
           </svg>
-        </button>
+        </Botao>
       </div>
     </div>
   );

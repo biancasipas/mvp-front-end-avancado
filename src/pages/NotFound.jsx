@@ -1,5 +1,4 @@
 import Header from "../components/Header";
-import produtos from "../data/produtos.json";
 
 function NotFound() {
   return (

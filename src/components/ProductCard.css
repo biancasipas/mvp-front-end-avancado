@@ -48,11 +48,6 @@
   margin-bottom: 1rem;
 }
 
-.category {
-  color: #999;
-  font-size: 0.8rem;
-}
-
 .button-container {
   display: flex;
   gap: 0.3rem;
@@ -133,16 +128,6 @@
   color: #727272;
 }
 
-.minus,
-.plus {
-  width: 22px;
-  height: 22px;
-  border-radius: 50%;
-  border: 1px solid #d9d9d9;
-  background: white;
-  cursor: pointer;
-}
-
 .quantity-number {
   min-width: 24px;
   padding: 3px 6px;
@@ -151,3 +136,35 @@
   background: white;
   color: #083270;
 }
+
+.button-container .cart-button.botao {
+  width: 50px;
+  height: auto;
+  padding: 0.6rem;
+  flex: 0 0 50px;
+}
+
+.quantity .botao {
+  width: 28px;
+  height: 28px;
+  min-width: 28px;
+
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  border-radius: 50%;
+
+  background: #ffffff;
+  color: #0e0101;
+
+  font-size: 12px;
+  font-weight: bold;
+
+  cursor: pointer;
+  transition: 0.2s;
+}
+
