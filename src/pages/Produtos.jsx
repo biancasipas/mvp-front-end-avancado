@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import Header from "../components/Header";
 import ProductCard from "../components/ProductCard";
@@ -7,16 +7,25 @@ import produtos from "../data/produtos.json";
 
 function Produtos() {
   const location = useLocation();
+
   const [busca, setBusca] = useState("");
+  const [produtosFiltrados, setProdutosFiltrados] = useState(produtos);
 
-  const tituloPagina = location.pathname === "/produtos" ? "Produtos" : "";
+  const tituloPagina =
+    location.pathname === "/produtos" ? "Produtos" : "";
 
-  const produtosFiltrados = produtos.filter((produto) =>
-    produto.nome
-      .toLowerCase()
-      .split(" ")
-      .some((palavra) => palavra.startsWith(busca.toLowerCase().trim()))
-  );
+  useEffect(() => {
+    const resultado = produtos.filter((produto) =>
+      produto.nome
+        .toLowerCase()
+        .split(" ")
+        .some((palavra) =>
+          palavra.startsWith(busca.toLowerCase().trim())
+        )
+    );
+
+    setProdutosFiltrados(resultado);
+  }, [busca]);
 
   return (
     <>
@@ -33,7 +42,9 @@ function Produtos() {
 
         <BarraBusca busca={busca} setBusca={setBusca} />
 
-        {produtosFiltrados.length === 0 && <p>Nenhum produto encontrado.</p>}
+        {produtosFiltrados.length === 0 && (
+          <p>Nenhum produto encontrado.</p>
+        )}
 
         <div className="produtos-container">
           {produtosFiltrados.map((produto) => (

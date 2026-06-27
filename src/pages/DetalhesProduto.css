@@ -126,3 +126,41 @@
 
   flex-shrink: 0;
 }
+
+@media (max-width: 768px) {
+  .detalhes-page {
+    padding: 30px 16px;
+  }
+
+  .detalhes-card {
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .detalhes-card img {
+    width: 100%;
+    max-width: 260px;
+    height: 260px;
+  }
+
+  .detalhes-info {
+    text-align: center;
+  }
+
+  .detalhes-info h1 {
+    font-size: 26px;
+  }
+
+  .detalhes-info p {
+    font-size: 15px;
+  }
+
+  .detalhes-compra {
+    align-items: center;
+  }
+
+  .detalhes-botoes {
+    justify-content: center;
+  }
+}
