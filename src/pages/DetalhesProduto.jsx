@@ -41,12 +41,12 @@ function DetalhesProduto() {
         <div className="detalhes-page">
           <h1>Produto não encontrado</h1>
 
-          <button
+          <Botao
             className="voltar-btn"
             onClick={() => navigate("/produtos")}
           >
             Voltar para produtos
-          </button>
+          </Botao>
         </div>
       </>
     );
@@ -78,23 +78,23 @@ function DetalhesProduto() {
               </strong>
 
               <div className="detalhes-quantidade">
-                <button
+                <Botao
                   className="minus"
                   onClick={diminuir}
                 >
                   -
-                </button>
+                </Botao>
 
                 <span className="quantity-number">
                   {quantidade}
                 </span>
 
-                <button
+                <Botao
                   className="plus"
                   onClick={aumentar}
                 >
                   +
-                </button>
+                </Botao>
               </div>
             </div>
 
