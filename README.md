@@ -1,6 +1,6 @@
-# 💊 Araújo - MVP Front-End Avançado
+#  Araújo - MVP Front-End Avançado
 
-## 📖 Descrição
+##  Descrição
 
 Este projeto foi desenvolvido como MVP da disciplina **Desenvolvimento Front-End Avançado**, da Pós-graduação em Desenvolvimento Full Stack da PUC-Rio.
 
@@ -12,7 +12,7 @@ Os produtos são carregados a partir de um arquivo JSON, simulando uma requisiç
 
 ---
 
-# 🚀 Tecnologias utilizadas
+#  Tecnologias utilizadas
 
 * React
 * Vite
@@ -24,7 +24,7 @@ Os produtos são carregados a partir de um arquivo JSON, simulando uma requisiç
 
 ---
 
-# 📂 Estrutura do projeto
+#  Estrutura do projeto
 
 ```
 src/
@@ -52,7 +52,7 @@ src/
 
 ---
 
-# ⚙️ Instalação
+#  Instalação
 
 Clone o repositório:
 
@@ -86,7 +86,7 @@ http://localhost:5173
 
 ---
 
-# ✨ Funcionalidades
+#  Funcionalidades
 
 * Página inicial.
 * Listagem de produtos.
@@ -102,7 +102,7 @@ http://localhost:5173
 
 ---
 
-# 🧩 Componentes reutilizáveis
+#  Componentes reutilizáveis
 
 * Header
 * ProductCard
@@ -112,7 +112,7 @@ http://localhost:5173
 
 ---
 
-# 🛣️ Rotas
+#  Rotas
 
 * `/` — Página inicial
 * `/produtos` — Lista de produtos
@@ -121,7 +121,7 @@ http://localhost:5173
 
 ---
 
-# 🎯 Hooks utilizados
+#  Hooks utilizados
 
 * useState
 * useEffect
@@ -131,7 +131,7 @@ http://localhost:5173
 
 ---
 
-# 👩‍💻 Desenvolvido por
+#  Desenvolvido por
 
 **Bianca Maria**
 
