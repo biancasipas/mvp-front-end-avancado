@@ -14,6 +14,12 @@ function Comprinhas() {
   }, []);
 
   const excluirItem = (id) => {
+    const confirmar = window.confirm(
+      "Deseja realmente excluir este produto da sua comprinha?"
+    );
+
+    if (!confirmar) return;
+
     const novaLista = comprinhas.filter((item) => item.id !== id);
 
     setComprinhas(novaLista);
