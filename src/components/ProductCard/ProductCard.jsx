@@ -1,7 +1,15 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import Botao from "./Botao";
+import Botao from "../Botao/Botao";
 import "./ProductCard.css";
+
+// Card reutilizável para exibição dos produtos.
+// Recebe:
+// nome
+// preço
+// categoria
+// imagem
+// quantidade
 
 function ProductCard({ id, nome, categoria, preco, imagem }) {
   const [quantidade, setQuantidade] = useState(1);

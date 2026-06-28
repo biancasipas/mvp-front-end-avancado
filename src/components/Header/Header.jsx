@@ -1,5 +1,5 @@
 import { NavLink, useLocation } from "react-router-dom";
-import logoFarmacia from "../assets/araujo.png";
+import logoFarmacia from "../../assets/araujo.png";
 import "./Header.css";
 
 const menuItems = [
@@ -7,6 +7,9 @@ const menuItems = [
   { label: "Produtos", to: "/produtos" },
   { label: "Comprinhas", to: "/comprinhas" }
 ];
+
+// Header da aplicação
+// Responsável pela navegação entre as páginas.
 
 function Header() {
   const location = useLocation();

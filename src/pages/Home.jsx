@@ -1,6 +1,9 @@
-import Header from "../components/Header";
+import Header from "../components/Header/Header";
 import { Link } from "react-router-dom";
 import "./Home.css";
+
+// Página inicial da aplicação.
+// Exibe apresentação da Vida Farma e botão para acessar os produtos.
 
 function Home() {
   return (

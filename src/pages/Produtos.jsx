@@ -1,9 +1,12 @@
 import { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import Header from "../components/Header";
-import ProductCard from "../components/ProductCard";
-import BarraBusca from "../components/BarraBusca";
+import Header from "../components/Header/Header";
+import ProductCard from "../components/ProductCard/ProductCard";
+import BarraBusca from "../components/BarraBusca/BarraBusca";
 import produtos from "../data/produtos.json";
+
+// Lista todos os produtos.
+// Possui filtro através da BarraBusca.
 
 function Produtos() {
   const location = useLocation();

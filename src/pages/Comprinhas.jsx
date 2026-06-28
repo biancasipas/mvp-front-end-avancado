@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import Header from "../components/Header";
+import Header from "../components/Header/Header";
 import "./Comprinhas.css";
-import Botao from "../components/Botao";
+import Botao from "../components/Botao/Botao";
 
 function Comprinhas() {
   const [comprinhas, setComprinhas] = useState([]);

@@ -1,9 +1,12 @@
 import { useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import Header from "../components/Header";
-import Botao from "../components/Botao";
+import Header from "../components/Header/Header";
+import Botao from "../components/Botao/Botao";
 import produtos from "../data/produtos.json";
 import "./DetalhesProduto.css";
+
+// Página de detalhes.
+// Recupera o ID utilizando useParams.
 
 function DetalhesProduto() {
   const { id } = useParams();

@@ -5,6 +5,8 @@ import DetalhesProduto from "../pages/DetalhesProduto";
 import NotFound from "../pages/NotFound";
 import Comprinhas from "../pages/Comprinhas";
 
+// Centraliza todas as rotas da aplicação.
+
 function AppRoutes() {
   return (
     <Routes>

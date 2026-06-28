@@ -1,5 +1,5 @@
 import "./Botao.css";
-import TooltipCustom from "./TooltipCustom";
+import Tooltip from "../Tooltip";
 
 function Botao({
   children,
@@ -9,7 +9,7 @@ function Botao({
   title = "",
 }) {
   return (
-    <TooltipCustom title={title} placement="top-end">
+    <Tooltip title={title} placement="top-end">
       <button
         type={type}
         onClick={onClick}
@@ -17,7 +17,7 @@ function Botao({
       >
         {children}
       </button>
-    </TooltipCustom>
+    </Tooltip>
   );
 }
 
