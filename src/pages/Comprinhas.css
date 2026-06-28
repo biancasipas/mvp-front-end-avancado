@@ -64,24 +64,19 @@
   font-size: 18px;
 }
 
-.comprinha-card button {
+.comprinha-card .botao {
   width: 80px;
   height: 36px;
-
-  border: none;
-  border-radius: 20px;
+  padding: 0;
 
   background: #083270;
   color: white;
 
   font-size: 14px;
   font-weight: bold;
-
-  cursor: pointer;
-  transition: 0.3s;
 }
 
-.comprinha-card button:hover {
+.comprinha-card .botao:hover {
   background: #005baa;
   transform: translateY(-2px);
 }
@@ -144,7 +139,7 @@
     font-size: 18px;
   }
 
-  .comprinha-card button {
+  .comprinha-card .botao {
     width: 110px;
     height: 38px;
     margin: 0 auto;
