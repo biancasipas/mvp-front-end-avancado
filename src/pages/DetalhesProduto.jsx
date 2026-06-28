@@ -11,9 +11,7 @@ function DetalhesProduto() {
 
   const [quantidade, setQuantidade] = useState(1);
 
-  const produto = produtos.find(
-    (item) => item.id === Number(id)
-  );
+  const produto = produtos.find((item) => item.id === Number(id));
 
   const diminuir = () => {
     if (quantidade > 1) {
@@ -28,6 +26,24 @@ function DetalhesProduto() {
   const total = produto ? produto.preco * quantidade : 0;
 
   const comprar = () => {
+    const novoItem = {
+      id: Date.now(),
+      produtoId: produto.id,
+      nome: produto.nome,
+      categoria: produto.categoria,
+      preco: produto.preco,
+      imagem: produto.imagem,
+      quantidade,
+      total,
+    };
+
+    const comprasSalvas =
+      JSON.parse(localStorage.getItem("comprinhas")) || [];
+
+    comprasSalvas.push(novoItem);
+
+    localStorage.setItem("comprinhas", JSON.stringify(comprasSalvas));
+
     alert(
       `${quantidade} unidade(s) adicionada(s) ao carrinho! Total: R$ ${total.toFixed(2)}`
     );
@@ -58,41 +74,26 @@ function DetalhesProduto() {
 
       <div className="detalhes-page">
         <div className="detalhes-card">
-          <img
-            src={produto.imagem}
-            alt={produto.nome}
-          />
+          <img src={produto.imagem} alt={produto.nome} />
 
           <div className="detalhes-info">
             <h1>{produto.nome}</h1>
 
-            <p className="detalhes-categoria">
-              {produto.categoria}
-            </p>
+            <p className="detalhes-categoria">{produto.categoria}</p>
 
             <p>{produto.descricao}</p>
 
             <div className="detalhes-compra">
-              <strong>
-                R$ {total.toFixed(2)}
-              </strong>
+              <strong>R$ {total.toFixed(2)}</strong>
 
               <div className="detalhes-quantidade">
-                <Botao
-                  className="minus"
-                  onClick={diminuir}
-                >
+                <Botao className="minus" onClick={diminuir}>
                   -
                 </Botao>
 
-                <span className="quantity-number">
-                  {quantidade}
-                </span>
+                <span className="quantity-number">{quantidade}</span>
 
-                <Botao
-                  className="plus"
-                  onClick={aumentar}
-                >
+                <Botao className="plus" onClick={aumentar}>
                   +
                 </Botao>
               </div>
@@ -105,17 +106,6 @@ function DetalhesProduto() {
                 title="Adicionar produto ao carrinho"
               >
                 Comprar
-
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="18"
-                  height="18"
-                  fill="currentColor"
-                  viewBox="0 0 16 16"
-                >
-                  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .49.402L2.89 3H14.5a.5.5 0 0 1 .49.598l-1.5 7A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.49-.402L1.61 2H.5A.5.5 0 0 1 0 1.5z" />
-                  <path d="M5.5 13a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm5 0a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z" />
-                </svg>
               </Botao>
 
               <Botao
@@ -134,4 +124,3 @@ function DetalhesProduto() {
 }
 
 export default DetalhesProduto;
-

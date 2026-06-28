@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Header from "../components/Header";
 import "./Comprinhas.css";
+import Botao from "../components/Botao";
 
 function Comprinhas() {
   const [comprinhas, setComprinhas] = useState([]);
@@ -48,9 +49,9 @@ function Comprinhas() {
                     <strong>R$ {item.total.toFixed(2)}</strong>
                   </div>
 
-                  <button onClick={() => excluirItem(item.id)}>
+                  <Botao onClick={() => excluirItem(item.id)}>
                     Excluir
-                  </button>
+                  </Botao>
                 </div>
               ))}
             </div>
