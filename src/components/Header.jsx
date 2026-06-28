@@ -5,6 +5,7 @@ import "./Header.css";
 const menuItems = [
   { label: "Home", to: "/" },
   { label: "Produtos", to: "/produtos" },
+  { label: "Comprinhas", to: "/comprinhas" }
 ];
 
 function Header() {
@@ -31,8 +32,14 @@ function Header() {
       </nav>
 
       <span className="rota-atual">
-        {location.pathname === "/" ? "Home" : "Produtos"}
-      </span>
+        {location.pathname === "/"
+        ? "Home"
+        : location.pathname === "/produtos"
+        ? "Produtos"
+        : location.pathname === "/comprinhas"
+        ? "Comprinhas"
+        : "Detalhes"}
+        </span>
     </header>
   );
 }

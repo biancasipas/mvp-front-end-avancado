@@ -19,6 +19,27 @@ function ProductCard({ id, nome, categoria, preco, imagem }) {
   const total = preco * quantidade;
 
   const adicionarCarrinho = () => {
+    const novoItem = {
+      id: Date.now(),
+      produtoId: id,
+      nome,
+      categoria,
+      preco,
+      imagem,
+      quantidade,
+      total,
+    };
+
+    const comprasSalvas =
+      JSON.parse(localStorage.getItem("comprinhas")) || [];
+
+    comprasSalvas.push(novoItem);
+
+    localStorage.setItem(
+      "comprinhas",
+      JSON.stringify(comprasSalvas)
+    );
+
     alert(
       `${quantidade} unidade(s) adicionada(s) ao carrinho!\nTotal: R$ ${total.toFixed(2)}`
     );
@@ -50,7 +71,10 @@ function ProductCard({ id, nome, categoria, preco, imagem }) {
       </div>
 
       <div className="button-container">
-        <Link to={`/produto/${id}`} className="buy-button button">
+        <Link
+          to={`/produto/${id}`}
+          className="buy-button button"
+        >
           Ver detalhes
         </Link>
 

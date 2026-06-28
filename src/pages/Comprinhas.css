@@ -1,0 +1,158 @@
+.comprinhas-page {
+  padding: 40px 20px;
+}
+
+.comprinhas-page h1 {
+  margin-bottom: 30px;
+}
+
+.comprinhas-vazia,
+.comprinha-card {
+  max-width: 650px;
+  margin: 0 auto 20px;
+  padding: 18px;
+
+  background: rgb(226, 226, 236);
+  border-radius: 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 20px 30px -10px;
+}
+
+.comprinhas-vazia p {
+  color: #555;
+  font-size: 18px;
+}
+
+.comprinhas-lista {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
+.comprinha-card {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: 90px 1fr 90px;
+  align-items: center;
+  gap: 18px;
+}
+
+.comprinha-card img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+
+  background: white;
+  border-radius: 14px;
+  padding: 8px;
+}
+
+.comprinha-card h3 {
+  color: #083270;
+  margin: 0 0 8px;
+  font-size: 16px;
+}
+
+.comprinha-card p {
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.comprinha-card strong {
+  color: #083270;
+  font-size: 18px;
+}
+
+.comprinha-card button {
+  width: 80px;
+  height: 36px;
+
+  border: none;
+  border-radius: 20px;
+
+  background: #083270;
+  color: white;
+
+  font-size: 14px;
+  font-weight: bold;
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.comprinha-card button:hover {
+  background: #005baa;
+  transform: translateY(-2px);
+}
+
+.total-compra {
+  max-width: 650px;
+  width: 100%;
+  margin: 10px auto 0;
+  padding: 18px;
+
+  background: white;
+  color: #083270;
+
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .comprinhas-page {
+    padding: 18px 10px;
+  }
+
+  .comprinhas-page h1 {
+    font-size: 28px;
+    margin-bottom: 22px;
+  }
+
+  .comprinhas-lista {
+    gap: 14px;
+  }
+
+  .comprinha-card {
+    width: 100%;
+    max-width: 300px;
+    padding: 14px;
+
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .comprinha-card img {
+    width: 90px;
+    height: 90px;
+    margin: 0 auto;
+  }
+
+  .comprinha-card h3 {
+    font-size: 16px;
+    line-height: 1.3;
+  }
+
+  .comprinha-card p {
+    font-size: 14px;
+  }
+
+  .comprinha-card strong {
+    font-size: 18px;
+  }
+
+  .comprinha-card button {
+    width: 110px;
+    height: 38px;
+    margin: 0 auto;
+  }
+
+  .total-compra {
+    max-width: 300px;
+    padding: 14px;
+    font-size: 18px;
+  }
+}
