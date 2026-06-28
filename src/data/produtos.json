@@ -38,5 +38,61 @@
     "descricao": "Gel de limpeza suave.",
     "preco": 39.99,
     "imagem": "/imagens/SaboneteF.webp"
+  },
+  {
+    "id": 6,
+    "nome": "Sabonete Líquido Nivea Óleo de Banho 200ml",
+    "categoria": "Higiene",
+    "descricao": "O óleo de banho Nivea é um sabonete desenvolvido para limpar e hidratar a pele ao mesmo tempo. Proporciona um toque macio e perfumado no banho.",
+    "preco": 34.99,
+    "imagem": "https://i3-imagens-prd.araujo.com.br/redimensionada/380x380/27102/186370_4005808808281_1.webp?sw=1000&sh=1000&sm=fit"
+  },
+  {
+    "id": 7,
+    "nome": "Bastão Ollie 3 em 1 Blush, Batom e Sombra FPS 95 Terracota com 4,5g",
+    "categoria": "Maquiagem",
+    "descricao": "Bastão 3 em 1 para blush, batom e sombra.",
+    "preco": 89.99,
+    "imagem": "https://i3-imagens-prd.araujo.com.br/redimensionada/380x380/103229/140816_7898968269248_1.webp?sw=1000&sh=1000&sm=fit"
+  },
+  {
+    "id": 8,
+    "nome": "Curativos Band Aid Transparentes 40 Unidades",
+    "categoria": "Primeiros Socorros",
+    "descricao": "Curativos transparentes respiráveis com 40 unidades.",
+    "preco": 14.99,
+    "imagem": "https://i3-imagens-prd.araujo.com.br/redimensionada/380x380/47585/7891010504755_1.webp?sw=1000&sh=1000&sm=fit"
+  },
+  {
+    "id": 9,
+    "nome": "Curativos Band Aid Ultra Protection 15 Unidades",
+    "categoria": "Primeiros Socorros",
+    "descricao": "Curativos Ultra Protection com 15 unidades.",
+    "preco": 26.39,
+    "imagem": "https://i3-imagens-prd.araujo.com.br/redimensionada/380x380/82927/07891010668631_1.webp?sw=1000&sh=1000&sm=fit"
+  },
+  {
+    "id": 10,
+    "nome": "Desodorante Antitranspirante Aerosol Nivea Men Invisible Black & White 150ml",
+    "categoria": "Higiene",
+    "descricao": "Desodorante aerosol masculino.",
+    "preco": 14.79,
+    "imagem": "https://i3-imagens-prd.araujo.com.br/redimensionada/380x380/65595/152161_4005900036728_1.webp?sw=1000&sh=1000&sm=fit"
+  },
+  {
+    "id": 12,
+    "nome": "Kit Dove Reconstrução e Aminoácido Expert em Danos Shampoo 350ml e Condicionador 175ml",
+    "categoria": "Cabelo",
+    "descricao": "Kit para reconstrução dos fios danificados.",
+    "preco": 26.99,
+    "imagem": "https://i3-imagens-prd.araujo.com.br/redimensionada/380x380/106795/181371_7891150103771_1.webp?sw=1000&sh=1000&sm=fit"
+  },
+  {
+    "id": 13,
+    "nome": "Cetaphil Creme Hidratante Galderma Pele Extremamente Seca e Sensível 453g",
+    "categoria": "Skincare",
+    "descricao": "Creme hidratante para peles extremamente secas e sensíveis.",
+    "preco": 99.89,
+    "imagem": "https://i3-imagens-prd.araujo.com.br/redimensionada/380x380/60038/7897930777798_1.webp"
   }
 ]
