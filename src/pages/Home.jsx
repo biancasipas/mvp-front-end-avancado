@@ -1,6 +1,5 @@
 import Header from "../components/Header";
 import { Link } from "react-router-dom";
-import farmacia from "../assets/farmacia.jpg";
 import "./Home.css";
 
 function Home() {
@@ -8,22 +7,19 @@ function Home() {
     <>
       <Header />
 
-      <div className="home-hero">
-        <img src={farmacia} alt="Farmácia" className="home-bg" />
-
-        <div className="home-overlay">
-          <h1>Bem-vindo à Vida Farma </h1>
+      <section className="home">
+        <div className="home-card">
+          <h1>Bem-vindo à Vida Farma</h1>
 
           <p>
-            Encontre produtos para cabelo, skincare,
-            vitaminas e medicamentos.
+            Produtos para sua saúde, beleza e bem-estar em um só lugar.
           </p>
 
           <Link to="/produtos" className="home-btn">
             Ver Produtos
           </Link>
         </div>
-      </div>
+      </section>
     </>
   );
 }

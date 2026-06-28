@@ -1,103 +1,74 @@
-.home-hero {
-  position: relative;
-  width: 100%;
-  min-height: 430px;
-  overflow: hidden;
-  border-radius: 0 0 12px 12px;
+.home {
+  padding: 60px 20px;
 }
 
-.home-bg {
-  width: 100%;
-  height: 100%;
-  min-height: 430px;
-  object-fit: cover;
-  display: block;
-}
+.home-card {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 55px 30px;
 
-.home-overlay {
-  position: absolute;
-  inset: 0;
+  background: linear-gradient(135deg, #005baa, #083270);
+  border-radius: 28px;
+  box-shadow: var(--shadow);
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  background: rgba(0, 18, 90, 0.58);
   text-align: center;
-  padding: 24px;
 }
 
-.home-overlay h1 {
+.home-card h1 {
   color: white;
-  font-size: 56px;
+  font-size: 54px;
+  margin: 0 0 20px;
   line-height: 1.15;
-  margin: 0 0 18px;
 }
 
-.home-overlay p {
+.home-card p {
+  max-width: 600px;
+  margin: 0 auto 35px;
+
   color: white;
   font-size: 22px;
   line-height: 1.5;
-  margin: 0 0 32px;
 }
 
 .home-btn {
-  background: #005baa;
-  color: white;
+  display: inline-block;
+
+  background: white;
+  color: #083270;
+
   text-decoration: none;
-  padding: 10px 20px;
-  border-radius: 30px;
   font-weight: bold;
-  font-size: 18px;
+
+  padding: 14px 38px;
+  border-radius: 28px;
+
   transition: 0.3s;
 }
 
 .home-btn:hover {
+  background: #eaf4ff;
   transform: translateY(-3px);
-  background: #083270;
 }
 
 @media (max-width: 768px) {
-  .home-hero {
-    min-height: 410px;
+  .home {
+    padding: 25px 14px;
   }
 
-  .home-bg {
-    min-height: 410px;
+  .home-card {
+    padding: 45px 20px;
   }
 
-  .home-overlay {
-    padding: 20px;
+  .home-card h1 {
+    font-size: 34px;
   }
 
-  .home-overlay h1 {
-    font-size: 30px;
-  }
-
-  .home-overlay p {
-    font-size: 15px;
-    max-width: 280px;
+  .home-card p {
+    font-size: 17px;
   }
 
   .home-btn {
-    width: 100%;
-    max-width: 220px;
-    padding: 14px 20px;
+    padding: 12px 26px;
     font-size: 15px;
-  }
-}
-
-@media (max-width: 400px) {
-  .home-hero {
-    min-height: 360px;
-  }
-
-  .home-bg {
-    min-height: 360px;
-  }
-
-  .home-overlay h1 {
-    font-size: 28px;
   }
 }
